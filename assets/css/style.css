@@ -12,6 +12,21 @@ body {
     font-family: "Sora", sans-serif;
 }
 /* Common */
+.section-desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+}
+
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
 a {
     text-decoration: none;
 }
@@ -40,8 +55,7 @@ a {
 }
 /* Header */
 .header {
-    padding-top: 30px;
-    min-height: 100vh;
+    padding: 30px 0 110px;
     background: var(--header-bg);
 }
 .header-top {
@@ -147,3 +161,80 @@ a {
     width: 210px;
     height: 410px;
 }
+/* Service */
+.service {
+    margin: 170px 0;
+}
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+.service__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.service__img {
+    width: 570px;
+    height: 570px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    object-fit: cover;
+}
+/* Service-Item */
+.service__item {
+    padding: 21px 18px 20px 22px;
+    display: flex;
+    width: 470px;
+    height: 128px;
+    border-radius: 10px;
+    background: #fff;
+    /* box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05); */
+}
+.service__item:hover{
+    position: relative;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+}
+.service__item:hover .service-item__icon{
+    background: #2e80ce;
+    color: #fff;
+}
+.service-item__body{
+    margin-left: 19px;
+}
+.service-item__heading {
+    line-height: 1.27;
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.service-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+.service-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    color: #10375c;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: 0.25s;   
+     border-radius: 50%;
+}
+.service__btn{
+    margin-top: 55px;
+}
+
