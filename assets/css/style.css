@@ -163,7 +163,7 @@ a {
 }
 /* Service */
 .service {
-    margin: 170px 0;
+    padding: 170px 0;
 }
 .service__heading,
 .service__desc {
@@ -197,15 +197,15 @@ a {
     background: #fff;
     /* box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05); */
 }
-.service__item:hover{
+.service__item:hover {
     position: relative;
     box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
 }
-.service__item:hover .service-item__icon{
+.service__item:hover .service-item__icon {
     background: #2e80ce;
     color: #fff;
 }
-.service-item__body{
+.service-item__body {
     margin-left: 19px;
 }
 .service-item__heading {
@@ -231,10 +231,60 @@ a {
     color: #10375c;
     background: #eff6fd;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
-    transition: 0.25s;   
-     border-radius: 50%;
+    transition: 0.25s;
+    border-radius: 50%;
 }
-.service__btn{
+.service__btn {
     margin-top: 55px;
+}
+/* How It Work */
+.work {
+    padding: 100px 0 116px;
+    background: #f7fbff;
+}
+.work__desc {
+    width: 468px;
+}
+.work__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.work-item{
+    border:16px solid #eaf6ff;
+    border-radius: 4px;
+background: #FFF;
+padding: 43px 42px;
+}
+.work-item:hover{
+    transform:translateY(-16px);
+    /* Di chuyển lên trên 16px */
+    border-color: #2e80ce;
+
+}
+.work-item:hover .work-item__more{
+    color: #2E80CE;
+}
+.work-item__heading{
+    margin-top: 18px;
+    color: #10375C;
+font-size: 1.6rem;
+font-weight: 600;
+line-height: 1.38; /* 138.462% */
+}
+.work-item__desc{
+    margin-top: 28px;
+    color: #575F66;
+font-size: 1.6rem;
+font-weight: 300;
+line-height: 1.75; /* 175% */
+}
+.work-item__more{
+    margin-top: 18px;
+    color: #575F66;
+font-size: 1.6rem;
+font-weight: 300;
+line-height: 1.75; /* 175% */
 }
 
